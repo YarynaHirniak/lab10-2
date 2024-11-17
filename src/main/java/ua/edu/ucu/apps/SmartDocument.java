@@ -1,5 +1,4 @@
-package lab10.decorator;
-
+package ua.edu.ucu.apps;
 import com.google.cloud.vision.v1.AnnotateImageRequest;
 import com.google.cloud.vision.v1.AnnotateImageResponse;
 import com.google.cloud.vision.v1.BatchAnnotateImagesResponse;
@@ -10,13 +9,11 @@ import com.google.cloud.vision.v1.ImageAnnotatorClient;
 import com.google.cloud.vision.v1.ImageSource;
 import com.google.cloud.vision.v1.TextAnnotation;
 import lombok.AllArgsConstructor;
-import lombok.Getter;
 import lombok.SneakyThrows;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Getter
 @AllArgsConstructor
 public class SmartDocument implements Document {
     public String gcsPath;
